@@ -1,0 +1,33 @@
+/* #box{
+    border: 1px solid black;
+    width:100px;
+    height:100px;
+    margin:200px;
+    background-color: red;
+    transform:translate(100px,100px);
+    transform:rotate(-45deg);
+    transform: scale(1,5); 
+    transform: skew( deg);
+    transform: matrix(100px,10px);
+} */
+
+div{
+    width:100px;
+    height:100px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.translated{
+    transform:perspective(15px) translateZ(-10px);
+}
+
+.scaled{
+    margin:300px;
+    transform: perspective(300px) scaleZ(4) rotateX(38deg) rotateY(39deg);
+}
+
+.static{
+    margin:300px;
+    transform:rotateZ(39deg);
+}

@@ -1,0 +1,83 @@
+/* position problem */
+
+#box{
+    width:400px;
+    height:200px;
+    display:inline-block;
+    margin:30px;
+    border: 1px solid black;
+
+}
+#box1{
+    display: inline-block;
+}
+#box2{
+    display: inline-block;
+    position: relative;
+    left:300px;
+}
+#box3{
+    position: relative;
+    left:70px;
+    top:80px;
+    display: inline-block;
+}
+#box4{
+    display: inline-block;
+    position: relative ;
+    top:180px;
+    right:145px;
+    
+    
+}
+#box5{
+    display: inline-block;
+    position: relative;
+    left:155px;
+    top:180px;
+}
+
+/* Conic gradient */
+#boxing{
+    border:1px solid black;
+    height:200px;
+    width:200px;
+    color: red;
+    margin:10px;
+    background-image: conic-gradient(from 90deg,red 65deg,blue 130deg,pink);
+
+}
+
+/* border around text */
+
+#textshadow{
+    color:red;
+    text-shadow: -1px 0 black, 0 1px black, 0 -1px black, 1px 0 black;
+}
+
+/* spread readius */
+#one{
+    margin:20px;
+    border:1px solid black;
+    width:200px;
+    height:200px;
+    background-color: red;
+    border-radius: 4px;
+    box-shadow: -10px -9px 3px 7px aqua, 7px 9px 6px 9px green;
+}
+
+/* matrix  in 2d transforms */
+#matrix{
+    height:90px;
+    width:80px;
+    border: 1px solid black;
+    margin:350px;
+    background-color: aqua;
+    transform: matrix(2, -2,2,4,30, 30);
+}
+
+
+
+
+
+

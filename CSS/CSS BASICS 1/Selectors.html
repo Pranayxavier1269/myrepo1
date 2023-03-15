@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BASICS 1</title>
+
+    <!--Element Selector-->
+    <style>
+        p {
+            color:red;
+            font-size: larger;
+        }
+        h2{
+            color:aqua;
+            background-color: burlywood;
+            display: inline;
+        }
+        table,tr,td{
+            border:1px solid red;
+            border-collapse :collapse;
+        }
+        
+
+    
+    </style>
+
+
+    <!--class selectors-->
+    <style>
+        .green{
+            color:green;
+        }
+        .blue{
+            color: blue;
+        }
+        .aqua{
+            font-size: small;
+        }
+        .red{
+            font-size: larger;
+        }
+
+    </style>
+
+    <!--id selector-->
+    <style>
+        #name{
+            color:red;
+        }
+        #myname{
+            color:blue;
+        }
+        #button1{
+            color:green;
+        }
+        #noway{
+            background-color: aqua;
+            display: inline;
+        }
+
+    </style>
+
+    <!--pseudo class selector-->
+    <style>
+        .button:hover{
+            background-color: aqua;
+            border:1px solid aqua;
+        }
+        #link:hover{
+            background-color: aqua;
+            display:inline;
+        }
+        #hiii:hover{
+            color:red;
+        }
+    </style>
+
+    <!--multiple selector-->
+    <style>
+        table,td,tr{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+    </style> 
+
+    <!--Internal styling-->
+
+    <style>
+        #style{
+            text-shadow:1px 2px 3px red;
+        }
+    </style> 
+
+    <!--External css styling link to html file -->
+
+    <!--specificity-->
+    <style>
+        h2{
+            color:red;
+        }
+        .one{
+            color:violet;
+        }
+        #two{
+            color:green;
+        }
+    </style>
+
+    <style>
+        #dho{
+            background-color: red;
+        }
+        .ek{
+            background-color: yellow;
+            color:aqua;
+        }
+        div{
+            background-color: black;
+            font-style:italic;
+        } 
+    </style>
+
+
+
+</head>
+<body>
+
+    <!--Element selector-->
+    <p>This is my first paragraph</p>
+    <h2>This is web dev course</h2>
+    <br>
+    <br>
+    <h2>No way</h2>
+    <p>THis is me</p>
+    <table>
+        <tr>
+            <td>abcd</td>
+            <td>abcd</td>
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <td>abcd</td>
+        </tr>
+    </table>
+
+    <!--class selectors-->
+    <p class="green"> ABCD</p>
+    <p class="green">PQRS</p>
+    <p class="green">NO way</p>
+    <p class="blue">xyg</p>
+
+    <h1 class="aqua">ABCD</h1>
+    <h2 class="red">EFGH</h2>
+    <h3 class="aqua">HIJK</h3>
+    <h4 class="red">LMNO</h4>
+    <h5 class="aqua">PQRS</h5>
+    <h6 class="red">TUVW</h6>
+
+    <!--id selector-->
+    <p id="name">Pranay</p>
+    <p id="myname">Name</p>
+
+    <button id="button1">Submit</button>
+    <br>
+    <br>
+    <p id="noway">No way</p>
+
+    <!--Pseudo class selector--> 
+    <button class="button">Login</button>
+    <a href="http://www.google.com" target="_blank" id="link">Google</a>
+    <p id="hiii">No www</p>
+
+    <!--Multiple selectors-->
+    <table>
+        <tr>
+            <td>abcd</td>
+            <td>abce</td>
+        </tr>
+        <tr>
+            <td>abcg</td>
+            <td>abvf</td>
+        </tr>
+    </table>
+
+    <!--Inline css styling-->
+    <p style="color:red">No man is like</p>
+    <h4 style="font-style: italic;">No way</h4>
+
+    <!--Internal css styling-->
+    <p id="style">Hello ji kaise he saree</p>
+
+    <!--External css styling-->
+    <h3 id="nope">This is mine</h3>
+
+
+    <!--specificity-->
+    <h2 class="one" id="two" style="color:aqua">WEB DEV COURSE</h2>
+
+    <div class="ek" id="dho">tkya haal mere dostho</div>
+</body>
+</html>

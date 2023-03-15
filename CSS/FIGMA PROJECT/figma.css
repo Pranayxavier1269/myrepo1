@@ -1,0 +1,66 @@
+/*universal selector*/
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* wrapper styling */
+.wrapper{
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    
+    margin:0 auto;
+}
+
+.container{
+    max-width:1440px;
+    height: 1461px;
+    background-color: white;
+    margin: 0 auto;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.image{
+    margin-top:48px;
+    margin-left:100px;
+    max-width: 100%;
+    width:88px;
+    height:72;
+}
+
+.team{
+    font-size: 1.7rem;
+    font-family:'Railway',sans-serif;
+    font-weight: 500;
+    display: flex;
+    gap:54px;
+    color: #777C85;
+    margin-top:20px;
+}
+
+#team1{
+    margin-left:130px;
+    color: #4E5DC0;
+    text-decoration:solid underline;
+}
+.btn{
+    border: 0;
+    background-color: #4E5DC0;
+    color: white;
+    margin-right:74px;
+    width:165px;
+    height:54px;
+    border-radius: 5px;
+    font-size:1rem;
+    margin-top:25px;
+}

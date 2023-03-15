@@ -1,0 +1,134 @@
+/* Universal selector is a important for better practice */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* wrapper is also important for good practice and it is maintain contents in it.
+perspective is for 3d application */
+
+#wrapper{
+    height:100vh;
+    overflow-x:hidden;
+    perspective: 10px; 
+}
+
+/* in this head contents present and it should be non-static for overlapping.
+Transform style is for 3d applied.z-index is for text should be on front(default=0) */
+
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index:-1;
+}
+
+/* background image is far away and slow */
+
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+
+/* foreground image is near and fast */
+
+.foreground{
+    transform: translateZ(-20px)  scale(3);
+
+}
+
+/* For overapping of images, object fit is for contents need not to be streched. */
+
+.background, .foreground{
+    position:absolute;
+    object-fit: cover;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* H1 tag styling */
+
+.adv{
+    position: absolute;
+    top:4rem;
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/*Section tag styling */
+
+section{
+    background-color: rgb(45,45,45);
+    padding:5rem 0;
+    color: white;
+}
+
+/* h2 tag ki styling  */
+
+.head{
+    font-size: 5rem;
+    padding: 0 6rem;
+}
+
+/* paragraphs styling */
+
+.para{
+    font-size: 1.5rem;
+    padding: 0 6rem;
+    margin:1rem 0;
+
+}
+
+/* background images added */
+
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+
+.bg2{
+    background-image: url(sport-2.jpg);
+}
+
+.bg3{
+    background-image: url(sport-3.jpg);
+}
+
+/* For background image propertys,for heading class should be on front, then background images should be non-static
+and attachment is fixed, postion is center, and image is cover the viewport. */
+
+.bg{
+    position: relative;
+    width:100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* here heading overlap so it is absolute, padding is also added */
+
+.heading{
+    position: absolute;
+    background-color: white;;
+    color: black;
+    padding: 0.5rem 2.5rem;
+    font-size:2rem ;
+}
+
+.thank{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+
+
+    <style>
+       *.red{
+        color: red;
+        }
+
+        #nested{
+            color:red;
+        }
+        #one{
+            color:green;
+        }
+        .two{
+            color: pink;
+        }
+
+        ol[type="a"] {
+        list-style-type: lower-alpha;
+        background: red;
+        }
+        ol[type="b" s] {
+        list-style-type: lower-alpha;
+        background: lime;
+        }
+        ol[type="B" s] {
+        list-style-type: upper-alpha;
+        background: grey;
+        }
+        ol[type="c" i] {
+        list-style-type: upper-alpha;
+        background: green;
+        }
+
+        p.one{
+            text-emphasis: filled green;
+            color:red;
+        }
+        p#two{
+            text-emphasis: open green;
+            color:red;
+        }
+        p.three{
+            text-emphasis: double-circle green;
+            color:red;
+        }
+        p#four{
+            text-emphasis: triangle green;
+            color:red;
+        }
+        
+        #dho{
+            color:aqua;
+        }
+        .ek{
+            color:blue !important;
+        }
+
+        @font-face {
+            font-family: Katerlin-51zjB;
+            src: url(fonts/Katerlin-51zjB.ttf);
+        }
+        #font{
+            font-family: Katerlin-51zjB;
+        }
+
+        #overflow{
+            width:200px;
+            height: 100px;
+            border:1px solid black;
+            overflow:auto;
+            overflow:visible;
+            overflow:hidden;
+            overflow:scroll;
+            overflow-y: scroll;
+            overflow-x:scroll;
+
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <!---1-Universal selectors-->
+    <p class="red">this is me</p>
+    <h3>this is men</h3>
+    <h4>the boys</h4>
+
+    <!--2- nested selector-->
+
+    <div id="nested">
+        <h2>no way</h2>
+        <p id="one">no way</p>
+        <p class="two">courses</p>
+
+    </div>
+
+    <!--3 attribute selctors-->
+        
+    <ol type="A">
+    <li>
+        Red background for case-insensitive matching (default for the type selector)
+    </li>
+    </ol>
+    <ol type="b">
+    <li>Lime background if `s` modifier is supported (case-sensitive match)</li>
+    </ol>
+    <ol type="B">
+    <li>Grey background if `s` modifier is supported (case-sensitive match)</li>
+    </ol>
+    <ol type="C">
+    <li>
+        Green background if `i` modifier is supported (case-insensitive match)
+    </li>
+    </ol>
+
+    <!--emphasis and importance-->
+    <p class="one">EK hota hai</p>
+    <p id="two">dono hota hai</p>
+    <p class="three">theen hota hai</p>
+    <p id="four">char hota hai</p>
+
+    <p class="ek" id="dho">Importance in css</p>
+
+    <!--adding external fonnt-->
+
+    <p id="font">this is me</p>
+
+    <!--overflow-->
+    <p id="overflow">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Corporis illum neque quaerat sunt, cum nemo iure. Quibusdam voluptas possimus debitis!
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

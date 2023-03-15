@@ -1,0 +1,33 @@
+/* universal selector */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* container layout */
+.container{
+    background-color: brown;
+    height:500px;
+    border: 2px solid black;
+    display:grid;
+    grid-template-columns: 150px 1fr 1fr 150px;
+    grid-template-rows: 50px 1fr 50px;
+    gap:5px;
+}
+
+.box{
+    border: 1px solid black;
+    background-color: aqua;
+
+}
+
+#box1,#box5{
+    grid-column: 1/5;
+}
+
+#box3{
+    grid-column: 2 /4;
+}
+
+

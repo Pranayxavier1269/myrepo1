@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICS 3</title>
+    <link rel="icon" href="favicon.ico"/>
+
+
+    <style>
+        table, tr, td, th {
+            border: 1px solid black;
+            border-collapse:collapse;
+            text-align: center;
+          
+        }
+    </style>
+</head>
+<body>
+    <!-- Table:Rowspan and colspan: -->
+
+    <h3>Rowspan and Colspan:</h3>
+    <table>
+        <caption>My first table</caption>
+        <tr>
+            <td colspan="2">abcd</td>
+            <td>abcd</td>  
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <td>abcd</td>
+            <td>abcd</td>
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <td>abcd</td>
+            <td>abcd</td>
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <td rowspan="2" colspan="2">abcd</td>
+
+        </tr>
+        <tr>
+            <td>abcd</td>
+
+        </tr>
+    </table>
+
+    <!-- CLASSWORK: -->
+
+    <h3>Classwork:</h3>
+    <table>
+        <tr>
+            <td rowspan="2">State of Health </td>
+            <td colspan="2">Fasting Value</td>
+            <td>After Eating</td>
+        </tr>
+
+        <tr>
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>2 hours after eating</td>
+        </tr>
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+        </tr>
+        <tr>
+            <td>Pre-Diabetes</td>
+            <td>100</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>N/A</td>
+            <td>More than 200</td>
+        </tr>
+    </table>
+
+
+    <!-- Homeweork: -->
+
+    <h3>Homeweork:</h3>
+    <table>
+        <tr>
+            <th colspan="6">Time Table</th>
+            
+        </tr>
+        <tr>
+            <th rowspan="6">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+
+            <th colspan="5">Lunch</th>
+        </tr>
+        <tr>
+
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+
+        </tr>
+    </table>
+
+    <!--Specific coloums colors:colgroup -->
+
+    <h3>Colgroup Property:</h3>
+    <table>
+        <colgroup>
+            <col span=""> <!--By default 1 value here-->
+            <col span="1" style="background-color:blue">
+            <col span="1" style="visibility: collapse"> <!--coloumn hide -->
+            <col span="" style="background-color:blue">  
+
+        </colgroup>
+        <tr>
+            <td>abcd</td>
+            <td>abcd</td>
+            <td>abcd</td>  
+            <td>abcd</td>  
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <td>abcd</td>
+            <td>abcd</td>
+            <td>abcd</td>  
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <td>abcd</td>
+            <td>abcd</td>
+            <td>abcd</td>  
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <td>abcd</td>
+            <td>abcd</td>  
+            <td>abcd</td>  
+
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <td>abcd</td>  
+            <td>abcd</td>  
+            <td>abcd</td>  
+            
+        </tr>
+    </table>
+
+
+    <!-- Homework -->
+    
+    <!-- cheat sheet last page: -->
+    <p> Copyright Symbol: &copy; </p>
+    <p> Dollar Symbol: &dollar; </p>
+    <p> Ampersand Symbol: &amp; </p>
+    <p> Greater than Symbol: &gt; </p>
+    <p> Less than Symbol: &lt; </p>
+
+    <!-- Image taking to source -->
+    <a href="http://www.google.com" target="_blank">
+        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fthewowstyle.com%2Fwp-content%2Fuploads%2F2015%2F01%2Fnature-images.jpg&f=1&nofb=1&ipt=dee10a81755a3047fe7825d54c7b027c056a9fd80c377e148c91d1da6bc117e9&ipo=images" alt="natiure" width="70" height="70">
+    </a> 
+
+
+
+    <!-- Homework of table in discord(clue:make rows into 6 and divide by 3)-->
+    <table>
+        <caption><b>Homeweork PROJECT</b></caption>
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>  
+            </tr>
+        
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+            
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2" style="background-color: palegoldenrod;">8:00 a.m</td>
+                <td rowspan="2" style="background-color: rgb(213, 186, 238);">5:00 p.m</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td style="background-color: palegoldenrod;">8:00 a.m</td>
+                <td style="background-color: palegoldenrod;">11:00 a.m</td>
+                <td rowspan="1">Xpath</td>
+            </tr>
+            <tr>
+                <td style="background-color: palegoldenrod;">11:00 a.m</td>
+                <td style="background-color: rgb(176, 223, 176);">2:00 p.m</td>
+                <td rowspan="2"> XSL Transformations</td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(176, 223, 176);">2:00 p.m</td>
+                <td style="background-color: rgb(213, 186, 238);">5:00 p.m</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+        <tr>
+            <td>Wednesday</td>
+            <td style="background-color: palegoldenrod;">8:00 a.m</td>
+            <td style="background-color: rgb(176, 223, 176);">12:00 p.m</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

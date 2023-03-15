@@ -1,0 +1,113 @@
+
+/* wrapper is best practice */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* container is centered in a page */
+.container{
+    min-height:100vh;
+    background-color:hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* a box is created and set to flex and max-width for not overflowing */
+.card-box{
+    max-width: 900px;
+    margin:1.5em 2em;
+    background-color: white;
+    display: flex;
+    border-radius: 1.5em;
+}
+
+/* image is set to 100% */
+img{
+    max-width: 100%;
+}
+
+/* here image is set to be some width and 100% height */
+.desktop_img{
+    display: block;
+    width: 1200px;
+    height: 100%;
+    border-radius: 1.5em 0 0 1.5em;
+}
+
+/* this is the text div part present in flex -child items */
+.card_text{
+    text-align:left;  /*all items starting from left with some margin */
+    margin:1.5em 2em;
+}
+
+/* the text is having font family and margin and letter spacing */
+.product{
+    font-family:'Montserrat',sans-serif;
+    font-weight: 500;
+    font-size:1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color:hsl(228, 12%, 48%);
+    margin-top: 0.8em;
+}
+
+/* new font family added here */
+@font-face {
+    font-family: 'Fraunces';
+    src: url(Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+/* another text is created with some restricted width and margin  */
+.product_title{
+    font-family:'Fraunces';
+    font-size:2.6rem;
+    font-weight:700;
+    line-height: 1; 
+    width:70%;
+    margin: 0.6em 0 1em 0;
+}
+
+/* here para width is set to 96% after that it goes to next line */
+.description {
+    font-family: "Montserrat", sans-serif;
+    width: 96%;
+    font-size: 1.5rem;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    margin-bottom: 1.5em;
+}
+
+.green_text{
+    color:hsl(158, 36%, 37%);
+    margin-right:0.5em;
+}
+
+/* button is styled by width is set to 100% and margin padding and cursor is pointer */
+.btn{
+    background-color:hsl(158, 36%, 37%); 
+    border-radius: 0.7em;
+    width:100%;
+    margin:2em 0 1em 0;
+    padding:1em 0;
+    border:0;
+    cursor: pointer;
+    outline:none;
+}
+
+/* when hover on button color changes */
+.btn:hover{
+    background-color: hsl(156, 24%, 24%);
+}
+
+/* butoon image is set to 100% and also with margin */
+.btn_img{
+    margin-right:1em;
+    max-width: 100%;
+}
+
+.btn_text{
+    color: white;
+}

@@ -1,0 +1,61 @@
+#box{
+    width:210px;
+    height:210px;
+    border:1px solid #f7f3f3;
+    border-radius: 4px;
+    box-shadow: 1px 2px 3px #cfcfcf;
+    
+}
+#image{
+    width:190px;
+    height:110px;          
+    border-radius: 4% ;
+    margin-top:10px;
+    margin-left:10px;
+    
+
+}
+#data{
+    width:190px;
+    height:30px;
+    margin-top:1px;
+    font-size:smaller;
+    padding-left:10px;
+    font-language-override: initial;
+}
+#line{
+    width:130px;
+    float: left;
+    margin-left:11px;  
+    margin-top: 1px;
+    padding-left: 20px;
+
+}
+#money{
+    color: rgb(82, 82, 166);
+    margin-left: 10px;
+    display:inline;
+    margin-top: 1px;
+    
+}
+#del{
+    margin-left:3px;
+    margin-top:2px;
+    display:inline;
+    color:rgb(104, 102, 102);
+
+}
+#button{
+    font-size: 10px;;
+    margin-left:5px;
+    margin-top: 1px;
+    width:fit-content;
+    height:fit-content;
+    
+    background-color: rgb(3, 201, 138);
+    border:1px solid rgb(3, 201, 138);
+    border-radius: 4px;
+    color:white;
+
+}
+

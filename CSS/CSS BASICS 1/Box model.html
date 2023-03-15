@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    
+    <style>    
+        .box{
+            height:100px;
+            width:200px;
+            border:1px solid black;
+            margin:10px;
+            padding:10px;
+            box-sizing: border-box;         
+        }
+        #one{
+            background-color: rgb(56,89,78);
+        }
+        #two{
+            background-color: white;
+        }
+        #three{ 
+            background-color: green;
+        }
+    </style>
+
+    <style>
+        #name{
+            background-color: aqua;
+            width:500px;
+            height:100px;
+        }
+        #name2{
+            background-color: blueviolet;
+            width:10%;
+            height:60%;
+        }
+
+    </style>
+
+    <style>
+        p{
+            background-color: red;
+            width:15vw;
+            height: 30vh;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="box" id="one">apple</div>
+    
+    <div class="box" id="two">ball</div>
+    
+    <div class="box" id="three">cat</div>
+    
+
+    <!--units in css(percentage)-->
+    <div id="name">kno
+        <div id="name2"> no money</div>
+
+    </div>
+
+    <!--Relative to vieport-->
+<p>
+    This is my first.
+</p>
+    
+
+
+</body>
+</html>

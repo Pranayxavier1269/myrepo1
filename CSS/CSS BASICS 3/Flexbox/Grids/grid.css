@@ -1,0 +1,43 @@
+/* universal selector */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* container layout */
+.container{
+    background-color: brown;
+    height:500px;
+    border: 2px solid black;
+
+    /* grid applications */
+    display: grid;
+
+    /* for colums and rows in grid, for equal parts use fr and repeat function */
+    grid-template-columns: 250px repeat(2,2fr);
+    grid-template-rows:repeat(4,1fr);
+
+    /* col and row gaps */
+    gap:16px;
+
+}
+
+/* boxes layout */
+.box{
+    background-color:aqua;
+    border: 2px solid black;
+
+}
+
+/* column span*/
+#box1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* row span */
+#box3{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}

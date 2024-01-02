@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    text-align: center;
+    padding:1.5rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    max-width:1650px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0.1rem;
+}
+
+.logo-image{
+    height:11rem;
+    width:11rem;
+    
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+.home{
+    color: black;
+    font-weight: bold;
+}

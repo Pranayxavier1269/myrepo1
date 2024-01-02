@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+
+.range{
+    height:10px;
+    width:100px;
+}

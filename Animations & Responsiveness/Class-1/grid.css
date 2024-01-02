@@ -1,0 +1,95 @@
+.container{
+    height:500px;
+    width:700px;
+    border:1px solid black;
+    color:red;
+    background-color: aqua;
+    
+    /* applying grid */
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: repeat(4,1fr);
+/* 
+    grid-gap:10px; */
+
+    /* grid properties */
+
+    /* 1.Justify content */
+
+    justify-content: start;
+    justify-content: center;
+    justify-content: end;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+
+    /* 2. Align content */
+
+    align-items: center;
+    align-items: stretch;
+    align-items: start;
+    align-items: end;
+    align-items: baseline;
+
+    /* 5. Align content */
+
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;
+
+    /* 6. Place items */
+
+    place-content: space-between;
+
+    place-items: center;
+    
+
+}
+
+/* boxes config */
+.box{
+    border:1px solid black;
+    background-color: blue;
+    /* height:50px;
+    /* width:100px; */       /* Here its fixed for boxes to not extend,so we will comment it */
+}
+
+/* span of individual box*/
+
+#box2{ 
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 1;
+    grid-row-end: 3; 
+
+    grid-area: 1/2/3/3;    /* short hand notation of rows and columns spanning */
+}
+
+/* grid properties for items */
+
+/* 3.justify self */
+
+#box1{ 
+    justify-self: start;
+    justify-self: end;
+    justify-self: center; 
+
+    /* 4. align-self */
+
+    align-self: start;
+    align-self: end;
+    align-self: center;
+    align-self: stretch;
+
+}
+
+/* 7.place self */
+#box1{
+    place-self: start;
+    place-self: center;
+    place-self: end;
+}
+
+
+

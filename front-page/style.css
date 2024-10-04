@@ -1,0 +1,29 @@
+/* universal Selector */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.first{
+    display: flex;
+    justify-content:space-around;
+    margin:20px;
+    color: aliceblue;
+}
+
+.container-2{
+    display: flex;
+    gap:20px;
+    width:15rem;
+}
+
+.container-3{
+    width: 10rem;
+    size: bold;
+}
+.button{
+    background-color:violet;
+    border-radius: 10%;
+}

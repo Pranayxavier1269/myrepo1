@@ -17,13 +17,22 @@
     display: flex;
     gap:20px;
     width:15rem;
+    margin-top: 5px;
+}
+
+:hover .one{
+    color:blue;
 }
 
 .container-3{
     width: 10rem;
     size: bold;
+    margin-top: 5px;
 }
 .button{
     background-color:violet;
     border-radius: 10%;
+}
+.heading{
+    color:white;
 }
